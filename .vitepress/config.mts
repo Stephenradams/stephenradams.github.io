@@ -28,5 +28,5 @@ export default defineConfig({
     
 
   },
-  base: '/stephenradams.github.io/',
+  base: '/repo/',
 })
