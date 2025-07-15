@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "CGCSoftware"
-  text: "CGCSoftware Website"
-  tagline: My great project tagline
+  name: "Stephen Adams"
+  text: ""
+  tagline: Freelance web developer
   actions:
     - theme: brand
       text: Markdown Examples

@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "CGCSoftware",
-  description: "CGCSoftware Website",
+  title: "Stephen Adams",
+  description: "Stephen Adams' personal website",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
