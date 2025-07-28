@@ -6,11 +6,15 @@
   "author": "Stephen Adams <stephen@cgcsoftware.co.uk>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.1.0",
     "vitepress": "^1.6.3"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vite-plugin-vercel": "^9.0.7"
   }
 }
