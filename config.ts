@@ -1,6 +1,19 @@
+import { title } from "process";
+
 export default {
   // app level config options
   lang: 'en-US',
-  title: 'Stephens Blog',
-  description: 'Vite & Vue powered static site generator.',
+title: false,
+  description: 'Freelance developer blog',
+  themeConfig: {
+    siteTitle: 'Stephens Blog',
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog/' },
+      { text: 'About', link: '/about/' },
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+    },
+  },
 }

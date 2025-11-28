@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: "Blog"
+title: "Stephen Adams | Freelance Web Developer"
 hero:
   name: "Stephen Adams"
   tagline: Freelance web developer
