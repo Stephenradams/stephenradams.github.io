@@ -1,12 +1,10 @@
-import { title } from "process";
-
 export default {
   // app level config options
   lang: 'en-US',
-title: false,
+  title: "Stephen Adams | Freelance Web Developer",
   description: 'Freelance developer blog',
   themeConfig: {
-    siteTitle: 'Stephens Blog',
+    title: "Stephen's Blog",
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/' },

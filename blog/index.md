@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: doc
 ---
 
 [Welcome](welcome.md)
