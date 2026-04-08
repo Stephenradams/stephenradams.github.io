@@ -1,10 +1,10 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: "Stephen Adams | Freelance Web Developer"
+title: "Stephen Adams | Developer & Consultant"
 hero:
   name: "Stephen Adams"
-  tagline: Freelance web developer
+  tagline: Developer & consultant with 20+ years experience
   actions:
     - theme: brand
       text: LinkedIn
