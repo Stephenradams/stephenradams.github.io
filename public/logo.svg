@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1923;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a3a;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Electric Blue gradient for main elements -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0076ff;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow filter for blue elements -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle glow for bg accents -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip path for the hexagon shape -->
+    <clipPath id="hexClip">
+      <polygon points="200,30 350,112 350,288 200,370 50,288 50,112"/>
+    </clipPath>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid lines in background -->
+  <g opacity="0.04" stroke="#5a8fa8" stroke-width="1">
+    <line x1="0" y1="80" x2="400" y2="80"/>
+    <line x1="0" y1="160" x2="400" y2="160"/>
+    <line x1="0" y1="240" x2="400" y2="240"/>
+    <line x1="0" y1="320" x2="400" y2="320"/>
+    <line x1="80" y1="0" x2="80" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="320" y1="0" x2="320" y2="400"/>
+  </g>
+
+  <!-- Outer hexagon ring (slate grey) -->
+  <polygon
+    points="200,28 354,114 354,286 200,372 46,286 46,114"
+    fill="none"
+    stroke="#4a6274"
+    stroke-width="2"
+    opacity="0.6"
+  />
+
+  <!-- Inner hexagon fill (very dark, slightly blue) -->
+  <polygon
+    points="200,48 336,122 336,278 200,352 64,278 64,122"
+    fill="#111c27"
+    stroke="#1e3a52"
+    stroke-width="1.5"
+    opacity="0.9"
+  />
+
+  <!-- Blue accent corners on outer hex -->
+  <polygon
+    points="200,28 354,114 354,286 200,372 46,286 46,114"
+    fill="none"
+    stroke="url(#blueGrad)"
+    stroke-width="2"
+    stroke-dasharray="20 140 20 140 20 140"
+    stroke-dashoffset="0"
+    filter="url(#softGlow)"
+    opacity="0.7"
+  />
+
+  <!-- ====== SA MONOGRAM ====== -->
+  <!-- The 'S' shape using a stylized path -->
+  <!-- Top curve of S -->
+  <path
+    d="M 148 148
+       C 148 130, 165 118, 185 118
+       L 220 118
+       C 238 118, 252 130, 252 148
+       C 252 160, 244 170, 232 176
+       L 190 192
+       C 175 198, 148 208, 148 228
+       C 148 248, 162 262, 182 262
+       L 200 262"
+    fill="none"
+    stroke="url(#blueGrad)"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+  />
+
+  <!-- Bottom of S connecting to A -->
+  <!-- A shape, right side, sharing part of S -->
+  <!-- The A is formed by: left leg, right leg, crossbar -->
+  <!-- Left leg of A - blends with bottom of S -->
+  <path
+    d="M 200 262
+       L 168 318"
+    fill="none"
+    stroke="#708090"
+    stroke-width="12"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+
+  <!-- Right leg of A -->
+  <path
+    d="M 200 262
+       L 232 318"
+    fill="none"
+    stroke="url(#blueGrad)"
+    stroke-width="12"
+    stroke-linecap="round"
+    filter="url(#glow)"
+  />
+
+  <!-- Crossbar of A -->
+  <path
+    d="M 176 295 L 224 295"
+    fill="none"
+    stroke="#708090"
+    stroke-width="8"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+
+  <!-- Top dot / peak of A merges with S bottom curve -->
+  <!-- Already connected via the S bottom to A top at 200,262 -->
+
+  <!-- ====== CURLY BRACE ACCENTS ====== -->
+  <!-- Left curly brace -->
+  <path
+    d="M 88 185
+       C 80 185, 74 190, 74 198
+       L 74 208
+       C 74 218, 66 222, 60 222
+       C 66 222, 74 226, 74 236
+       L 74 246
+       C 74 254, 80 258, 88 258"
+    fill="none"
+    stroke="#4a6274"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.8"
+  />
+
+  <!-- Right curly brace -->
+  <path
+    d="M 312 185
+       C 320 185, 326 190, 326 198
+       L 326 208
+       C 326 218, 334 222, 340 222
+       C 334 222, 326 226, 326 236
+       L 326 246
+       C 326 254, 320 258, 312 258"
+    fill="none"
+    stroke="#4a6274"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.8"
+  />
+
+  <!-- Forward slash accent between braces (subtle) -->
+  <line
+    x1="192" y1="218"
+    x2="208" y2="208"
+    stroke="#00d4ff"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    opacity="0.4"
+    filter="url(#softGlow)"
+  />
+
+  <!-- ====== NAME TEXT ====== -->
+  <!-- STEPHEN ADAMS -->
+  <text
+    x="200"
+    y="356"
+    font-family="'Courier New', 'Consolas', monospace"
+    font-size="13"
+    font-weight="bold"
+    letter-spacing="5"
+    text-anchor="middle"
+    fill="#708090"
+  >STEPHEN ADAMS</text>
+
+  <!-- Tagline / role -->
+  <text
+    x="200"
+    y="376"
+    font-family="'Courier New', 'Consolas', monospace"
+    font-size="8"
+    letter-spacing="3.5"
+    text-anchor="middle"
+    fill="#00d4ff"
+    opacity="0.7"
+  >WEB DEVELOPER</text>
+
+  <!-- Small dot accents near the hex vertices (electric blue) -->
+  <circle cx="200" cy="28" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+  <circle cx="354" cy="114" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+  <circle cx="354" cy="286" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+  <circle cx="200" cy="372" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+  <circle cx="46" cy="286" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+  <circle cx="46" cy="114" r="3" fill="#00d4ff" filter="url(#softGlow)" opacity="0.8"/>
+
+</svg>

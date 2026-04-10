@@ -3,7 +3,11 @@ export default {
   lang: 'en-US',
   title: "Stephen Adams | Developer & Consultant",
   description: 'Developer and consultant blog',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     title: "Stephen's Blog",
     nav: [
       { text: 'Home', link: '/' },
