@@ -4,17 +4,17 @@ layout: home
 title: "Stephen Adams | Developer & Consultant"
 hero:
   name: "Stephen Adams"
-  tagline: Developer & consultant with 20+ years experience
+  tagline: Developer & consultant · Angular book author
   actions:
     - theme: brand
+      text: My Book →
+      link: https://leanpub.com/getting-started-with-angular
+    - theme: alt
       text: LinkedIn
       link: https://www.linkedin.com/in/stephenradams1/
-    - theme: brand
-      text: My Book
-      link: https://leanpub.com/getting-started-with-angular
-    - theme: brand
+    - theme: alt
       text: Blog
-      link: /blog 
+      link: /blog
 
 features:
   - title: TypeScript developer
@@ -22,6 +22,8 @@ features:
   - title: Mobile App developer
     details: My extensive background in responsive web applications with TypeScript, HTML, and CSS seamlessly translates to mobile development using React Native and Expo. My expertise in component-based architecture and declarative UI allows me to create native iOS and Android experiences from a single codebase. Expo further streamlines development, accelerating prototyping, simplifying device access, and easing cross-platform app deployment.
   - title: Author
-    details: My book offers an 11-chapter guide to Angular, a leading front-end framework. It covers everything from core concepts like Components and Services to advanced topics such as Observables, RxJs, and NgRx for state management. You'll also learn to use the Angular CLI for efficient development, including unit testing and preparing applications for production.
+    details: '"Getting Started with Angular" — an 11-chapter guide covering core concepts, Observables, RxJs, NgRx state management, unit testing, and deploying to production. Available now on Leanpub.'
+    link: https://leanpub.com/getting-started-with-angular
+    linkText: Read on Leanpub
 ---
 

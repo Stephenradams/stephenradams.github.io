@@ -11,10 +11,11 @@ export default {
     title: "Stephen's Blog",
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Services', link: '/services/' },
-      { text: 'Projects', link: '/projects/' },
+      { text: 'Book', link: 'https://leanpub.com/getting-started-with-angular' },
+      { text: 'Services', link: '/services' },
+      { text: 'Projects', link: '/projects' },
       { text: 'Blog', link: '/blog/' },
-      { text: 'About', link: '/about/' },
+      { text: 'About', link: '/about' },
     ],
     footer: {
       message: 'Released under the MIT License.',
