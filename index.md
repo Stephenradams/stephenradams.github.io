@@ -27,3 +27,4 @@ features:
     linkText: Read on Leanpub
 ---
 
+<NewsletterSignup />
