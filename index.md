@@ -18,13 +18,11 @@ hero:
 
 features:
   - title: TypeScript developer
-    details: I'm an experienced Web Developer with 20 years of expertise in building responsive web applications for desktop and mobile, serving both private and public organizations. I excel at digitizing business workflows, improving user experiences, and mentoring teams, ensuring high-quality, long-lasting solutions from requirements to deployment, leveraging TypeScript, Angular and React.
+    details: With 20 years shipping production web apps, I turn complex requirements into reliable, maintainable software — on time. I've helped private companies and public organisations digitise workflows, reduce manual overhead, and deliver polished user experiences. I bring deep TypeScript, Angular, and React expertise, and I mentor teams so the quality sticks long after the project ships.
   - title: Mobile App developer
-    details: My extensive background in responsive web applications with TypeScript, HTML, and CSS seamlessly translates to mobile development using React Native and Expo. My expertise in component-based architecture and declarative UI allows me to create native iOS and Android experiences from a single codebase. Expo further streamlines development, accelerating prototyping, simplifying device access, and easing cross-platform app deployment.
+    details: Need iOS and Android without two separate teams? I build cross-platform mobile apps with React Native and Expo — sharing a single codebase without sacrificing native feel. My web background means faster ramp-up, less context-switching for your project, and a developer who can own the full stack from API to app store.
   - title: Author
     details: '"Getting Started with Angular" — an 11-chapter guide covering core concepts, Observables, RxJs, NgRx state management, unit testing, and deploying to production. Available now on Leanpub.'
     link: https://leanpub.com/getting-started-with-angular
     linkText: Read on Leanpub
 ---
-
-<NewsletterSignup />

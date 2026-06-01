@@ -1,25 +1,27 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 
+defineProps({ compact: { type: Boolean, default: false } })
+
 const container = ref(null)
 
 onMounted(() => {
   const script = document.createElement('script')
-  script.src = 'https://eocampaign1.com/form/27594fbc-3807-11f1-b713-dfc62e40546e.js'
-  script.setAttribute('data-form', '27594fbc-3807-11f1-b713-dfc62e40546e')
+  script.src = 'https://eocampaign1.com/form/560616ca-5dcc-11f1-acc8-85b0573ef143.js'
+  script.setAttribute('data-form', '560616ca-5dcc-11f1-acc8-85b0573ef143')
   script.async = true
   container.value.appendChild(script)
 })
 </script>
 
 <template>
-  <div class="newsletter-section">
+  <div :class="['newsletter-section', { 'newsletter-section--compact': compact }]">
     <div class="newsletter-inner">
       <div class="newsletter-header">
         <span class="newsletter-label">newsletter</span>
         <h2 class="newsletter-title">Stay in the loop</h2>
         <p class="newsletter-desc">
-          Angular, TypeScript, and frontend development — straight to your inbox. No spam, unsubscribe any time.
+          Latest dev notes on what I'm working on, what I've learnt and tips on Angular, TypeScript and mobile development.
         </p>
       </div>
       <div ref="container" class="newsletter-form-container" />
@@ -74,5 +76,10 @@ onMounted(() => {
 
 .newsletter-form-container {
   width: 100%;
+}
+
+.newsletter-section--compact {
+  padding: 32px 24px 0;
+  border-top: none;
 }
 </style>
