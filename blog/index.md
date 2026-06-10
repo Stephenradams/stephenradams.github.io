@@ -16,7 +16,7 @@ description: Writing on frontend development, tooling, and software craft
   <div class="blog-header">
     <span class="blog-icon">⏳</span>
     <div class="blog-meta">
-      <h3><a href="waiting-for-review.md">Waiting for Review</a></h3>
+      <h3><a href="./waiting-for-review">Waiting for Review</a></h3>
       <span class="blog-date">30 Apr 2026</span>
     </div>
   </div>
@@ -27,7 +27,7 @@ description: Writing on frontend development, tooling, and software craft
   <div class="blog-header">
     <span class="blog-icon">🤖</span>
     <div class="blog-meta">
-      <h3><a href="using-ai.md">My Thoughts on Using AI</a></h3>
+      <h3><a href="./using-ai">My Thoughts on Using AI</a></h3>
       <span class="blog-date">25 Apr 2026</span>
     </div>
   </div>
@@ -38,7 +38,7 @@ description: Writing on frontend development, tooling, and software craft
   <div class="blog-header">
     <span class="blog-icon">🦀</span>
     <div class="blog-meta">
-      <h3><a href="learning-rust.md">Learning Rust</a></h3>
+      <h3><a href="./learning-rust">Learning Rust</a></h3>
       <span class="blog-date">29 Mar 2026</span>
     </div>
   </div>
@@ -49,7 +49,7 @@ description: Writing on frontend development, tooling, and software craft
   <div class="blog-header">
     <span class="blog-icon">👋</span>
     <div class="blog-meta">
-      <h3><a href="welcome.md">Welcome</a></h3>
+      <h3><a href="./welcome">Welcome</a></h3>
       <span class="blog-date">28 Jul 2025</span>
     </div>
   </div>

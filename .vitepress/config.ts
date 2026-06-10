@@ -8,7 +8,7 @@ export default {
   ],
   themeConfig: {
     logo: '/logo.svg',
-    title: "Stephen's Blog",
+    siteTitle: "Stephen's Blog",
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Book', link: 'https://leanpub.com/getting-started-with-angular' },

@@ -82,7 +82,7 @@ body {
   border-bottom: 1px solid var(--dev-border) !important;
 }
 
-.dark .VPNav {
+.dark .VPNavBar {
   background: rgba(10, 14, 23, 0.92) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
