@@ -14,6 +14,17 @@ description: Writing on frontend development, tooling, and software craft
 
 <div class="blog-card">
   <div class="blog-header">
+    <span class="blog-icon">🤖</span>
+    <div class="blog-meta">
+      <h3><a href="./ai-is-great-until-its-not">Using AI is great until it's not</a></h3>
+      <span class="blog-date">01 Jul 2026</span>
+    </div>
+  </div>
+  <p>AI tools can build features fast, but who understands and maintains the code they generate? A look at what happens when you lean on AI too hard — and why you still need engineers.</p>
+</div>
+
+<div class="blog-card">
+  <div class="blog-header">
     <span class="blog-icon">⏳</span>
     <div class="blog-meta">
       <h3><a href="./waiting-for-review">Waiting for Review</a></h3>
