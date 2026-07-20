@@ -45,7 +45,7 @@ description: Writing on frontend development, tooling, and software craft
   <p>I've been using AI heavily across work and personal projects. The productivity gains are real — but so is the risk of shipping code you don't fully understand.</p>
 </div>
 
-<div class="blog-card">
+<!-- <div class="blog-card">
   <div class="blog-header">
     <span class="blog-icon">🦀</span>
     <div class="blog-meta">
@@ -54,7 +54,7 @@ description: Writing on frontend development, tooling, and software craft
     </div>
   </div>
   <p>Picking up a systems language after years of JavaScript and TypeScript. First impressions of Rust's ownership model, the borrow checker, and why people rave about it.</p>
-</div>
+</div> -->
 
 <div class="blog-card">
   <div class="blog-header">

@@ -44,7 +44,7 @@ description: Frontend development and consulting services from Stephen Adams
   </div>
   <p>I have a strong track record of taking over legacy codebases and delivering upgrades without disruption. I document everything and ensure clean handovers so your team owns the result.</p>
   <ul class="service-list">
-    <li>Angular version upgrades with full documentation</li>
+    <li>Angular version upgrades</li>
     <li>TypeScript strict mode adoption</li>
     <li>Migrating from class-based to modern Angular patterns</li>
     <li>Refactoring for maintainability and performance</li>
@@ -97,7 +97,6 @@ description: Frontend development and consulting services from Stephen Adams
   <ul class="service-list">
     <li>React Native and Expo app development</li>
     <li>Responsive mobile-first web applications</li>
-    <li>Ionic hybrid apps</li>
   </ul>
 </div>
 
