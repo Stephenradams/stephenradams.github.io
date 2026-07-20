@@ -71,6 +71,21 @@ description: Frontend development and consulting services from Stephen Adams
 
 <div class="service-card">
   <div class="service-header">
+    <span class="service-icon">📱</span>
+    <div class="service-meta">
+      <h3>Mobile Development</h3>
+      <span class="service-pricing">Fixed project · Day rate</span>
+    </div>
+  </div>
+  <p>I build cross-platform iOS and Android apps using React Native and Expo, with earlier experience in Ionic. My background in component-based web development translates directly to mobile.</p>
+  <ul class="service-list">
+    <li>React Native and Expo app development</li>
+    <li>Responsive mobile-first web applications</li>
+  </ul>
+</div>
+
+<div class="service-card">
+  <div class="service-header">
     <span class="service-icon">⚛️</span>
     <div class="service-meta">
       <h3>React Development</h3>
@@ -85,20 +100,7 @@ description: Frontend development and consulting services from Stephen Adams
   </ul>
 </div>
 
-<div class="service-card">
-  <div class="service-header">
-    <span class="service-icon">📱</span>
-    <div class="service-meta">
-      <h3>Mobile Development</h3>
-      <span class="service-pricing">Fixed project · Day rate</span>
-    </div>
-  </div>
-  <p>I build cross-platform iOS and Android apps using React Native and Expo, with earlier experience in Ionic. My background in component-based web development translates directly to mobile.</p>
-  <ul class="service-list">
-    <li>React Native and Expo app development</li>
-    <li>Responsive mobile-first web applications</li>
-  </ul>
-</div>
+
 
 <div class="service-card">
   <div class="service-header">
