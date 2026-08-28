@@ -8,15 +8,20 @@ description: Frontend development and consulting services from Stephen Adams
 <p class="services-intro">Senior frontend development and consulting for teams who need an experienced pair of hands. No fluff — just clean, well-documented code and honest communication.</p>
 
 <div class="services-availability">
-  <span class="avail-badge">Available for new work</span>
-  <span class="avail-note">Contract · Freelance &nbsp;·&nbsp; Pricing available upon request — all engagements start with a 30 min consultation.</span>
+  <span class="avail-badge">● Available for new work</span>
+  <ul class="avail-facts">
+    <li>Contract &amp; freelance engagements</li>
+    <li>Pricing on request</li>
+    <li>Every engagement starts with a free 30-minute consultation</li>
+  </ul>
 </div>
 
 ---
 
 <div class="services-grid">
 
-<div class="service-card">
+<div class="service-card service-card--primary">
+  <span class="service-tag">Primary specialism</span>
   <div class="service-header">
     <span class="service-icon">⚡</span>
     <div class="service-meta">
@@ -141,16 +146,15 @@ description: Frontend development and consulting services from Stephen Adams
 
 .services-availability {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
 }
 
 .avail-badge {
   display: inline-block;
-  padding: 0.25em 0.75em;
+  padding: 0.3em 0.85em;
   border-radius: 9999px;
   background: rgba(74, 222, 128, 0.12);
   color: #4ade80;
@@ -161,19 +165,42 @@ description: Frontend development and consulting services from Stephen Adams
   white-space: nowrap;
 }
 
-.avail-note {
-  color: var(--vp-c-text-3);
+.avail-facts {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
   font-family: var(--vp-font-family-mono);
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+}
+
+.avail-facts li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.avail-facts li::before {
+  content: '·';
+  color: var(--dev-cyan, #22d3ee);
+  font-weight: 600;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin: 2rem 0;
+  max-width: 720px;
 }
 
 .service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 10px;
@@ -185,6 +212,27 @@ description: Frontend development and consulting services from Stephen Adams
   border-color: rgba(34, 211, 238, 0.35);
   box-shadow: 0 0 24px rgba(34, 211, 238, 0.06);
   transform: translateY(-2px);
+}
+
+.service-card--primary {
+  border-color: rgba(34, 211, 238, 0.35);
+  background:
+    linear-gradient(rgba(34, 211, 238, 0.04), rgba(34, 211, 238, 0.04)),
+    var(--vp-c-bg-soft);
+}
+
+.service-tag {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.2em 0.7em;
+  border-radius: 9999px;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: var(--dev-cyan, #22d3ee);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .service-header {
@@ -203,10 +251,11 @@ description: Frontend development and consulting services from Stephen Adams
 
 .service-meta h3 {
   font-family: var(--vp-font-family-mono) !important;
-  font-size: 0.95rem !important;
+  font-size: 1rem !important;
   font-weight: 600;
+  line-height: 1.4;
   color: var(--vp-c-text-1) !important;
-  margin: 0 0 0.25rem !important;
+  margin: 0 0 0.3rem !important;
   border: none !important;
   padding: 0 !important;
 }
@@ -223,17 +272,30 @@ description: Frontend development and consulting services from Stephen Adams
   opacity: 0.8;
 }
 
-.service-card p {
+.service-card > p {
   font-size: 0.875rem;
   color: var(--vp-c-text-2);
   line-height: 1.7;
   margin: 0 0 1rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-border);
 }
 
 .service-list {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.service-list::before {
+  content: 'What I deliver';
+  display: block;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--vp-c-text-3);
+  margin-bottom: 0.6rem;
 }
 
 .service-list li {
@@ -322,11 +384,7 @@ description: Frontend development and consulting services from Stephen Adams
 
 @media (max-width: 640px) {
   .services-grid {
-    grid-template-columns: 1fr;
-  }
-  .services-availability {
-    flex-direction: column;
-    align-items: flex-start;
+    max-width: 100%;
   }
 }
 </style>

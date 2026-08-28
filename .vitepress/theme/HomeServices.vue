@@ -1,5 +1,6 @@
 <template>
   <div class="vp-doc container home-services-wrap">
+    <span class="home-services-label">what i do</span>
     <h2>Services</h2>
 
     <p class="home-services-intro">Four ways I help teams ship — from rescuing stalled projects to building the architecture that lets them scale.</p>
@@ -9,41 +10,57 @@
       <div class="home-service-card">
         <div class="home-service-header">
           <span class="home-service-icon">🔄</span>
-          <h3>Legacy Codebase Modernisation & Version Upgrades</h3>
+          <h3>Legacy Codebase Modernisation &amp; Version Upgrades</h3>
         </div>
         <p class="home-service-what">Upgrading legacy Angular/React applications to current versions without breaking existing functionality or causing business downtime.</p>
-        <p class="home-service-line"><span class="home-service-label">Proof:</span> Upgraded SmartImpact's critical application to Angular 15 under a tight deadline, fixing TypeScript issues and adding typed forms.</p>
-        <p class="home-service-line"><span class="home-service-label">Value:</span> Prevents technical debt, reduces security vulnerabilities, and speeds up future feature deployment.</p>
+        <dl class="home-service-detail">
+          <dt>Proof</dt>
+          <dd>Upgraded SmartImpact's critical application to Angular 15 under a tight deadline, fixing TypeScript issues and adding typed forms.</dd>
+          <dt>Value</dt>
+          <dd>Prevents technical debt, reduces security vulnerabilities, and speeds up future feature deployment.</dd>
+        </dl>
       </div>
 
       <div class="home-service-card">
         <div class="home-service-header">
           <span class="home-service-icon">🏗️</span>
-          <h3>Frontend Architecture & Design Systems</h3>
+          <h3>Frontend Architecture &amp; Design Systems</h3>
         </div>
         <p class="home-service-what">Setting up monorepos, reusable component libraries, and automated testing suites to help dev teams scale faster and maintain UI consistency.</p>
-        <p class="home-service-line"><span class="home-service-label">Proof:</span> Built NX monorepo architectures, core component libraries, and Storybook/Jest/Cypress testing pipelines for RealWear.</p>
-        <p class="home-service-line"><span class="home-service-label">Value:</span> Eliminates duplicate work across dev teams, speeds up onboarding, and guarantees brand consistency across multi-app ecosystems.</p>
+        <dl class="home-service-detail">
+          <dt>Proof</dt>
+          <dd>Built NX monorepo architectures, core component libraries, and Storybook/Jest/Cypress testing pipelines for RealWear.</dd>
+          <dt>Value</dt>
+          <dd>Eliminates duplicate work across dev teams, speeds up onboarding, and guarantees brand consistency across multi-app ecosystems.</dd>
+        </dl>
       </div>
 
       <div class="home-service-card">
         <div class="home-service-header">
           <span class="home-service-icon">🚑</span>
-          <h3>Rapid UI/UX Digitisation & Rescue Projects</h3>
+          <h3>Rapid UI/UX Digitisation &amp; Rescue Projects</h3>
         </div>
         <p class="home-service-what">Stepping into stalled, poorly documented, or high-urgency projects to stabilise the frontend, digitise complex workflows, and meet critical deadlines.</p>
-        <p class="home-service-line"><span class="home-service-label">Proof:</span> Took over unhanded-over projects at Inawisdom and RehabAgency, cleared massive bug backlogs, and delivered AI-driven UIs and complex spreadsheet workflows on schedule.</p>
-        <p class="home-service-line"><span class="home-service-label">Value:</span> Protects client revenue during vendor handovers or team turnover, saving high-stakes projects from failing.</p>
+        <dl class="home-service-detail">
+          <dt>Proof</dt>
+          <dd>Took over unhanded-over projects at Inawisdom and RehabAgency, cleared massive bug backlogs, and delivered AI-driven UIs and complex spreadsheet workflows on schedule.</dd>
+          <dt>Value</dt>
+          <dd>Protects client revenue during vendor handovers or team turnover, saving high-stakes projects from failing.</dd>
+        </dl>
       </div>
 
       <div class="home-service-card">
         <div class="home-service-header">
           <span class="home-service-icon">📡</span>
-          <h3>Specialized Real-Time & Interactive Web Solutions</h3>
+          <h3>Specialised Real-Time &amp; Interactive Web Solutions</h3>
         </div>
         <p class="home-service-what">Developing complex frontend interfaces featuring interactive mapping, video communication, or AI interface integration.</p>
-        <p class="home-service-line"><span class="home-service-label">Proof:</span> Integrated LeafletJS with GraphQL/REST APIs for BT's global cable mapping app; integrated Twilio for multi-way video platforms at RealWear and Solirius.</p>
-        <p class="home-service-line"><span class="home-service-label">Value:</span> Builds high-complexity, data-heavy tools that regular web developers struggle to architect cleanly.</p>
+        <dl class="home-service-detail">
+          <dt>Proof</dt>
+          <dd>Integrated LeafletJS with GraphQL/REST APIs for BT's global cable mapping app; integrated Twilio for multi-way video platforms at RealWear and Solirius.</dd>
+          <dt>Value</dt>
+          <dd>Builds high-complexity, data-heavy tools that regular web developers struggle to architect cleanly.</dd>
+        </dl>
       </div>
 
     </div>
@@ -72,21 +89,38 @@
   }
 }
 
+.home-services-label {
+  display: inline-block;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 0.5rem;
+}
+
+.dark .home-services-label::before {
+  content: '// ';
+  color: #475569;
+}
+
 .home-services-intro {
   font-size: 1.05rem;
   color: var(--vp-c-text-2);
   max-width: 640px;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.75rem;
 }
 
 .home-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin: 1.5rem 0;
 }
 
 .home-service-card {
+  display: flex;
+  flex-direction: column;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-border);
   border-radius: 10px;
@@ -116,8 +150,9 @@
 
 .home-service-header h3 {
   font-family: var(--vp-font-family-mono) !important;
-  font-size: 0.95rem !important;
+  font-size: 1rem !important;
   font-weight: 600;
+  line-height: 1.4;
   color: var(--vp-c-text-1) !important;
   margin: 0 !important;
   border: none !important;
@@ -129,25 +164,37 @@
 }
 
 .home-service-what {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--vp-c-text-2);
   line-height: 1.7;
-  margin: 0 0 0.75rem !important;
+  margin: 0 0 1rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-border);
 }
 
-.home-service-line {
+.home-service-detail {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.home-service-detail dt {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dev-cyan, #22d3ee);
+  margin-bottom: 0.2rem;
+}
+
+.home-service-detail dd {
+  margin: 0 0 0.85rem !important;
   font-size: 0.82rem;
   color: var(--vp-c-text-2);
   line-height: 1.6;
-  margin: 0 0 0.4rem !important;
 }
 
-.home-service-label {
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.72rem;
-  color: var(--dev-cyan, #22d3ee);
-  letter-spacing: 0.04em;
-  margin-right: 0.35rem;
+.home-service-detail dd:last-child {
+  margin-bottom: 0 !important;
 }
 
 .home-services-cta {
@@ -166,7 +213,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
   .home-services-grid {
     grid-template-columns: 1fr;
   }

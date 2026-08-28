@@ -91,10 +91,11 @@ description: Writing on frontend development, tooling, and software craft
 }
 
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin: 2rem 0;
+  max-width: 720px;
 }
 
 .blog-card {
@@ -173,7 +174,7 @@ description: Writing on frontend development, tooling, and software craft
 
 @media (max-width: 640px) {
   .blog-grid {
-    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 </style>

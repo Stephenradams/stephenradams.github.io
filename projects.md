@@ -162,10 +162,11 @@ description: A selection of notable projects from Stephen Adams's career as a fr
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin: 2rem 0;
+  max-width: 720px;
 }
 
 .project-card {
@@ -282,7 +283,7 @@ description: A selection of notable projects from Stephen Adams's career as a fr
 
 @media (max-width: 640px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
 </style>
