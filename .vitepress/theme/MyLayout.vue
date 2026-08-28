@@ -11,10 +11,11 @@ const { frontmatter } = useData()
 <template>
   <Layout>
     <template v-if="frontmatter.layout === 'home'" #home-hero-actions-after>
-      <NewsletterSignup :compact="true" />
+      <HomeServices />
+      
     </template>
     <template v-if="frontmatter.layout === 'home'" #home-features-before>
-      <HomeServices />
+      <NewsletterSignup :compact="true" />
     </template>
   </Layout>
 </template>
