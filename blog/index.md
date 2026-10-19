@@ -14,6 +14,17 @@ description: Writing on frontend development, tooling, and software craft
 
 <div class="blog-card">
   <div class="blog-header">
+    <span class="blog-icon">📚</span>
+    <div class="blog-meta">
+      <h3><a href="./starting-to-learn-rust_part-1">Starting to learn Rust - Part 1</a></h3>
+      <span class="blog-date">19 Oct 2026</span>
+    </div>
+  </div>
+  <p>Exploring why AI is transforming the way we build software, the limits of automation, and why human judgment still matters.</p>
+</div>
+
+<div class="blog-card">
+  <div class="blog-header">
     <span class="blog-icon">💡</span>
     <div class="blog-meta">
       <h3><a href="./ai-why">Allowing AI development to become why development</a></h3>
