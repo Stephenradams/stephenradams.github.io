@@ -12,7 +12,7 @@ description: Writing on frontend development, tooling, and software craft
 
 <div class="blog-grid">
 
-<div class="blog-card">
+<!-- <div class="blog-card">
   <div class="blog-header">
     <span class="blog-icon">📚</span>
     <div class="blog-meta">
@@ -21,7 +21,7 @@ description: Writing on frontend development, tooling, and software craft
     </div>
   </div>
   <p>Exploring why AI is transforming the way we build software, the limits of automation, and why human judgment still matters.</p>
-</div>
+</div> -->
 
 <div class="blog-card">
   <div class="blog-header">
