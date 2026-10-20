@@ -12,6 +12,17 @@ description: Writing on frontend development, tooling, and software craft
 
 <div class="blog-grid">
 
+<div class="blog-card">
+  <div class="blog-header">
+    <span class="blog-icon">📚</span>
+    <div class="blog-meta">
+      <h3><a href="./updates-to-your-frontend-application">Updates to your frontend application - a guide</a></h3>
+      <span class="blog-date">20 Oct 2026</span>
+    </div>
+  </div>
+  <p>A short 5 step guide on what to expect and how to solve these problems when upgrading your web application. </p>
+</div>
+
 <!-- <div class="blog-card">
   <div class="blog-header">
     <span class="blog-icon">📚</span>
