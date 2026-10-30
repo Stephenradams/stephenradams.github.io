@@ -16,6 +16,17 @@ description: Writing on frontend development, tooling, and software craft
   <div class="blog-header">
     <span class="blog-icon">📚</span>
     <div class="blog-meta">
+      <h3><a href="./why-frontend-needs"> Why Your Stalled Frontend Project Needs an Emergency Triage (Before Your Client Fires You)</a></h3>
+      <span class="blog-date">21 Oct 2026</span>
+    </div>
+  </div>
+  <p>Why frontend development still needs thoughtful engineers, strong fundamentals, and human judgment.</p>
+</div>
+
+<div class="blog-card">
+  <div class="blog-header">
+    <span class="blog-icon">📚</span>
+    <div class="blog-meta">
       <h3><a href="./updates-to-your-frontend-application">Updates to your frontend application - a guide</a></h3>
       <span class="blog-date">20 Oct 2026</span>
     </div>
@@ -23,7 +34,7 @@ description: Writing on frontend development, tooling, and software craft
   <p>A short 5 step guide on what to expect and how to solve these problems when upgrading your web application. </p>
 </div>
 
-<!-- <div class="blog-card">
+<div class="blog-card">
   <div class="blog-header">
     <span class="blog-icon">📚</span>
     <div class="blog-meta">
@@ -31,8 +42,8 @@ description: Writing on frontend development, tooling, and software craft
       <span class="blog-date">19 Oct 2026</span>
     </div>
   </div>
-  <p>Exploring why AI is transforming the way we build software, the limits of automation, and why human judgment still matters.</p>
-</div> -->
+  <p>Starting my journey on the road to learn Rust.</p>
+</div>
 
 <div class="blog-card">
   <div class="blog-header">
