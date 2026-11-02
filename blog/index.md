@@ -34,7 +34,7 @@ description: Writing on frontend development, tooling, and software craft
   <p>A short 5 step guide on what to expect and how to solve these problems when upgrading your web application. </p>
 </div>
 
-<div class="blog-card">
+<!-- <div class="blog-card">
   <div class="blog-header">
     <span class="blog-icon">📚</span>
     <div class="blog-meta">
@@ -43,7 +43,7 @@ description: Writing on frontend development, tooling, and software craft
     </div>
   </div>
   <p>Starting my journey on the road to learn Rust.</p>
-</div>
+</div> -->
 
 <div class="blog-card">
   <div class="blog-header">
